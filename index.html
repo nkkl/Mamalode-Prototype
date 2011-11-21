@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mamalode Prototype</title>
+
+	<!-- import jquery and wipetouch libraries -->
+	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.1.min.js"></script>
+	<script type="text/javascript" src="jquery.wipetouch.js"></script>
+
+	<!-- import our css and js -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<!-- each div of class "page" represents one page of the magazine -->
+	<!-- pages are "turned" by showing/hiding these divs using js -->
+	<div id="1" class="page active">
+		Mamalode page 1!
+	</div>
+	<div id="2" class="page">
+		Mamalode page 2
+	</div>
+	<div id="3" class="page">
+		Mamalode page 3
+	</div>
+
+	<!-- this is the top menu bar -->
+	<!-- menu bar is hidden by default, shown on tap via js -->
+	<div id="menubar">
+		This is the menu bar!
+
+		<!-- this is the table of contents -->
+		<!-- the TOC is a child of "menubar" so that we can use CSS positioning on it -->
+		<div id="toc">
+		</div>
+	</div>
+</body>
+</html>

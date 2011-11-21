@@ -1,0 +1,22 @@
+/* Main CSS file */
+
+/** GENERAL **/
+html {
+	font-family: sans-serif;
+	font-size: 12pt;
+}
+
+body {
+	height: 1024px; /* Conform to the iPad's size */
+	width: 768px;
+	border: 1px solid black;
+}
+
+/** PAGES **/
+.page {
+	display: none;
+}
+
+.active {
+	display: block;
+}
