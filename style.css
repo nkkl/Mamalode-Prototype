@@ -6,20 +6,72 @@ html {
 	font-size: 12pt;
 }
 
+body {
+	margin: 0;
+	padding: 0;
+}
+
 #wrapper {
-	height: 1024px; /* Conform to the iPad's size */
-	width: 768px;
+	margin: 0;
+	padding: 2px;
+	height: 1020px; /* Conform to the iPad's size */
+	width: 764px;
 	border: 1px solid black;
+	overflow: hidden;
+	position: relative;
 }
 
 /** PAGES **/
 .page {
+	margin: 0;
+	padding: 50px;
 	display: none;
-	height: 100%;
-	width: 100%;
-	background: gray;
+	overflow: hidden;
+	background: white;
 }
 
 .active {
 	display: block;
+}
+
+.page h2 {
+	color: #DE00C4;
+	margin-bottom: -10px;
+}
+
+.footer {
+	clear: both;
+	position: relative;
+	overflow: hidden;
+}
+
+.articleTitle {
+	float: left;
+	color: red;
+	font-family: serif;
+	font-size: 80px;
+}
+
+.pageNum {
+	font-size: 14pt;
+	color: rgb(170,170,170);
+	white-space: nowrap;
+	position: absolute;
+	right: 30px;
+	bottom: 25px;
+}
+
+.columnLeft {
+	width: 300px;
+	float: left;
+}
+
+.columnRight {
+	width: 300px;
+	float: right;
+}
+
+/** MENU **/
+#menubar {
+	display: none;
 }
