@@ -5,20 +5,22 @@ $(document).ready(function() {
 	// catch swipes and "turn" the pages
 	$(".page").wipetouch(
 	{
+		tapToClick: true,
+
 		// wipe from right to left
 		// (turn to the NEXT page)
 		wipeLeft: function(result) {
-			if ( ".active".attr("id") == "3" ) {
-				return;
-			} else {
-				var a;
-				alert((".active").attr("id"));
-			}
-		}
+			//
+		},
 		// wipe from left to right
 		// (turn to the PREVIOUS page)
 		wipeRight: function(result) {
-			// do something when we wipe right
-		}
+			// alert(result.x);
+		},
+	});
+
+	$(".page").click(function() {
+		var page_id = $(this).attr("id");
+		alert(page_id);
 	});
 });
