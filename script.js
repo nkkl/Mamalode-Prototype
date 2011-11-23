@@ -5,7 +5,7 @@ $(document).ready(function() {
 	// catch swipes and "turn" the pages
 	$(".page").live("swipeleft swiperight", function(event) {
 		if (event.type == "swipeleft") {
-			var page_id = parseInt($(".active").attr("id"));
+			var page_id = parseInt($(this).attr("id"));
 			var new_page_id;
 
 			// if we are on the last page, don't turn
@@ -15,13 +15,12 @@ $(document).ready(function() {
 				new_page_id = page_id + 1;
 				new_page_id = "#" + new_page_id;
 				
-				$(new_page_id).addClass("active");
-				$("#" + page_id).removeClass("active");
-				$.mobile.changePage($(new_page_id), { transition: "slideleft" });
+				$(this).hide();
+				$(new_page_id).show("slide", { direction: "right", distance: "50px" }, 500);
 			}
 		}
 		if (event.type == "swiperight") {
-			var page_id = parseInt($(".active").attr("id"));
+			var page_id = parseInt($(this).attr("id"));
 			var new_page_id;
 
 			// if we are on the first page, don't turn
@@ -31,9 +30,8 @@ $(document).ready(function() {
 				new_page_id = page_id - 1;
 				new_page_id = "#" + new_page_id;
 
-				$(new_page_id).addClass("active");
-				$("#" + page_id).removeClass("active");
-				$.mobile.changePage($(new_page_id), { transition: "slideright" });
+				$(this).hide();
+				$(new_page_id).show("slide", { direction: "left", distance: "50px" }, 500);
 			}
 		}
 	});
