@@ -21,13 +21,18 @@ body {
 	position: relative;
 }
 
+.ui-loader {
+	display: none; /* Remove the jquery mobile loading message */
+}
+
 /** PAGES **/
 .page {
 	margin: 0;
 	padding: 50px;
-	display: none;
+	font-size: 11pt;
 	overflow: hidden;
 	background: white;
+	display: none;
 }
 
 .active {
