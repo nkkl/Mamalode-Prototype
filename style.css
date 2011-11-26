@@ -1,0 +1,116 @@
+/* Main CSS file */
+
+/** GENERAL **/
+html {
+	font-family: sans-serif;
+	font-size: 12pt;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 1020px; /* Conform to the iPad's size */
+	width: 764px;
+}
+
+#wrapper {
+	margin: 0;
+	padding: 2px;
+	overflow: hidden;
+	position: relative;
+}
+
+.ui-loader {
+	display: none; /* Remove the jquery mobile loading message */
+}
+
+/** PAGES **/
+.page {
+	margin: 0;
+	padding: 50px;
+	font-size: 11pt;
+	overflow: hidden;
+	background: white;
+	display: none;
+	position: relative;
+}
+
+.active {
+	display: block;
+}
+
+.page h2 {
+	color: #DE00C4;
+	margin-bottom: -10px;
+}
+
+.footer {
+	clear: both;
+	position: relative;
+	overflow: hidden;
+}
+
+.articleTitle {
+	float: left;
+	color: red;
+	font-family: serif;
+	font-size: 80px;
+}
+
+.pageNum {
+	font-size: 14pt;
+	color: rgb(170,170,170);
+	white-space: nowrap;
+	position: absolute;
+	right: 30px;
+	bottom: 25px;
+}
+
+.bookmark {
+	height: 60px;
+	width: 60px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.dogeared {
+	border-color: transparent transparent rgb(200,200,200) rgb(200,200,200);
+	border-style: solid;
+	border-width: 30px;
+	height: 0;
+	width: 0;
+}
+
+.columnLeft {
+	width: 300px;
+	float: left;
+}
+
+.columnRight {
+	width: 300px;
+	float: right;
+}
+
+#1 {
+	z-index: 80;
+}
+
+#2 {
+	z-index: 90;
+}
+
+#3 {
+	z-index: 100;
+}
+
+/** MENU **/
+#menubar {
+	height: 44px;
+	background: black;
+	width: 100%;
+	color: white;
+	position: absolute;
+	top: 0;
+	display: none;
+}
