@@ -4,6 +4,7 @@
 $(document).ready(function() {	
 	// catch swipes and "turn" the pages
 	$(".page").live("swipeleft swiperight", function(event) {
+		// catch right-to-left swipes
 		if (event.type == "swipeleft") {
 			var page_id = parseInt($(this).attr("id"));
 			var new_page_id;
@@ -19,6 +20,8 @@ $(document).ready(function() {
 				$(new_page_id).show("slide", { direction: "right", distance: "50px" }, 500);
 			}
 		}
+
+		// catch left-to-right swipes
 		if (event.type == "swiperight") {
 			var page_id = parseInt($(this).attr("id"));
 			var new_page_id;
@@ -36,4 +39,7 @@ $(document).ready(function() {
 		}
 	});
 
+	$(".bookmark").live("tap", function(event) {
+		$(".bookmark").toggleClass("dogeared");
+	});
 });
