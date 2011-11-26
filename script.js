@@ -3,7 +3,7 @@
 // wait until everything is loaded before running any js
 $(document).ready(function() {	
 	// catch swipes and "turn" the pages
-	$(".page").live("swipeleft swiperight", function(event) {
+	$(".page").live("swipeleft swiperight tap", function(event) {
 		// catch right-to-left swipes
 		if (event.type == "swipeleft") {
 			var page_id = parseInt($(this).attr("id"));
@@ -36,6 +36,11 @@ $(document).ready(function() {
 				$(this).hide();
 				$(new_page_id).show("slide", { direction: "left", distance: "50px" }, 500);
 			}
+		}
+
+		// toggle menu bar on tap
+		if (event.type == "tap") {
+			$("#menubar").toggle();
 		}
 	});
 

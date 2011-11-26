@@ -32,6 +32,7 @@ body {
 	overflow: hidden;
 	background: white;
 	display: none;
+	position: relative;
 }
 
 .active {
@@ -105,5 +106,11 @@ body {
 
 /** MENU **/
 #menubar {
+	height: 44px;
+	background: black;
+	width: 100%;
+	color: white;
+	position: absolute;
+	top: 0;
 	display: none;
 }
