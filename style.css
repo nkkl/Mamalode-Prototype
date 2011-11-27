@@ -67,6 +67,7 @@ body {
 }
 
 .bookmark {
+	z-index: 1000;
 	height: 60px;
 	width: 60px;
 	position: absolute;
@@ -75,7 +76,11 @@ body {
 }
 
 .dogeared {
-	border-color: transparent transparent rgb(200,200,200) rgb(200,200,200);
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: 1000;
+	border-color: white white rgb(200,200,200) rgb(200,200,200);
 	border-style: solid;
 	border-width: 30px;
 	height: 0;

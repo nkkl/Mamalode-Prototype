@@ -45,6 +45,9 @@ $(document).ready(function() {
 	});
 
 	$(".bookmark").live("tap", function(event) {
-		$(".bookmark").toggleClass("dogeared");
+		// find current page
+		var page_num = parseInt($(".active").attr("id").replace("page",""));
+		// add bookmark to current page's bookmark div
+		$("#bookmark" + page_num).toggleClass("dogeared");
 	});
 });
