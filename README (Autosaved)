@@ -1,0 +1,7 @@
+Known Issues:
+
+.page needs to have padding for the whole 1020 pixels of height to show. Not sure why this happens
+
+Scrolling past the last page does not throw and error, and causes a bug
+
+The Menu bar is not displaying properly

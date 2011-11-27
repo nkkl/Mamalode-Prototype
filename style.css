@@ -27,7 +27,7 @@ body {
 /** PAGES **/
 .page {
 	margin: 0;
-	padding: 50px;
+	padding: 130px;
 	font-size: 11pt;
 	overflow: hidden;
 	background: white;
@@ -72,6 +72,7 @@ body {
 	position: absolute;
 	top: 0px;
 	right: 0px;
+	z-index: 5900;
 }
 
 .dogeared {
@@ -80,6 +81,7 @@ body {
 	border-width: 30px;
 	height: 0;
 	width: 0;
+	z-index: 580;
 }
 
 .columnLeft {
@@ -92,17 +94,360 @@ body {
 	float: right;
 }
 
-#1 {
+#p0 {
+	z-index: 70;
+	background-image: url("cover.png");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+
+#p1 {
 	z-index: 80;
+	background-image: url("photos/p1.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
 }
 
-#2 {
+#p2 {
 	z-index: 90;
+	background-image: url("photos/p2.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
 }
 
-#3 {
+#p3 {
 	z-index: 100;
+	background-image: url("photos/p3.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
 }
+
+#p4 {
+	z-index: 110;
+	background-image: url("photos/p4.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#p5 {
+	z-index: 120;
+	background-image: url("photos/p5.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#p6 {
+	z-index: 130;
+	background-image: url("photos/p6.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#p7 {
+	z-index: 140;
+	background-image: url("photos/p7.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#p8 {
+	z-index: 150;
+	background-image: url("photos/p8.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#p9 {
+	z-index: 160;
+	background-image: url("photos/p9.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#p10 {
+	z-index: 170;
+	background-image: url("photos/p10.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+#p11 {
+	z-index: 180;
+	background-image: url("photos/p11.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#p12 {
+	z-index: 190;
+	background-image: url("photos/p12.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#p13 {
+	z-index: 200;
+	background-image: url("photos/p13.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#p14 {
+	z-index: 210;
+	background-image: url("photos/p14.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#p15 {
+	z-index: 220;
+	background-image: url("photos/p15.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+#p16 {
+	z-index: 230;
+	background-image: url("photos/p16.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#p17 {
+	z-index: 240;
+	background-image: url("photos/p17.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#p18 {
+	z-index: 250;
+	background-image: url("photos/p18.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+#p19 {
+	z-index: 260;
+	background-image: url("photos/p19.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+
+#p20 {
+	z-index: 270;
+	background-image: url("photos/p20.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#p21 {
+	z-index: 280;
+	background-image: url("photos/p21.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#p22 {
+	z-index: 290;
+	background-image: url("photos/p22.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#p23 {
+	z-index: 300;
+	background-image: url("photos/p23.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#p24 {
+	z-index: 310;
+	background-image: url("photos/p24.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#p25 {
+	z-index: 320;
+	background-image: url("photos/p25.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#p26 {
+	z-index: 330;
+	background-image: url("photos/p26.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#p27 {
+	z-index: 340;
+	background-image: url("photos/p27.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#p28 {
+	z-index: 350;
+	background-image: url("photos/p28.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#p29 {
+	z-index: 360;
+	background-image: url("photos/p29.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#p30 {
+	z-index: 370;
+	background-image: url("photos/p30.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#p31 {
+	z-index: 380;
+	background-image: url("photos/p31.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+#p32 {
+	z-index: 390;
+	background-image: url("photos/p32.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#p33 {
+	z-index: 400;
+	background-image: url("photos/p33.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#p34 {
+	z-index: 410;
+	background-image: url("photos/p34.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#p35 {
+	z-index: 420;
+	background-image: url("photos/p35.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#p36 {
+	z-index: 430;
+	background-image: url("photos/p36.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+#p37 {
+	z-index: 440;
+	background-image: url("photos/p37.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#p38 {
+	z-index: 450;
+	background-image: url("photos/p38.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#p39 {
+	z-index: 460;
+	background-image: url("photos/p39.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+#p40 {
+	z-index: 470;
+	background-image: url("photos/p40.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+
+#p41 {
+	z-index: 480;
+	background-image: url("photos/p41.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#p42 {
+	z-index: 490;
+	background-image: url("photos/p42.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+
+#p43 {
+	z-index: 500;
+	background-image: url("photos/p43.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#p44 {
+	z-index: 510;
+	background-image: url("photos/p44.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
 
 /** MENU **/
 #menubar {
@@ -113,4 +458,5 @@ body {
 	position: absolute;
 	top: 0;
 	display: none;
+	z-index: 600;
 }
