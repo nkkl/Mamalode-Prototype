@@ -270,10 +270,18 @@ body {
 #menubar {
 	z-index: 1000;
 	height: 44px;
-	background: black;
 	width: 100%;
 	color: white;
 	position: absolute;
 	top: 0;
+	display: none;
+}
+
+#toc {
+	z-index: 900;
+	height: 976px;
+	width: 600px;
+	position: absolute;
+	top: 44px;
 	display: none;
 }

@@ -56,4 +56,8 @@ $(document).ready(function() {
 		$("#bookmark" + page_num).toggleClass("dogeared");
 		console.log("dogeared id: " + $(".dogeared").attr("id"));
 	});
+
+	$("#toc-trigger").live("tap", function(event) {
+		$("#toc").toggle();
+	});
 });

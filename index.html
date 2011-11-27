@@ -161,13 +161,15 @@
 
 	<!-- this is the top menu bar -->
 	<!-- menu bar is hidden by default, shown on tap via js -->
-	<div id="menubar" data-role="header">
-		<a>Table of Contents</a>
-		<a href="mailto:?subject=Mamalode%20article">Share</a>
+	<div id="menubar" data-role="header" data-theme="d">
+		<a data-theme="a" id="toc-trigger">Table of Contents</a>
+		<a href="mailto:?subject=Mamalode%20article" data-icon="arrow-r" data-iconpos="right" data-theme="a">Share</a>
 		<!-- this is the table of contents -->
 		<!-- the TOC is a child of "menubar" so that we can use CSS positioning on it -->
-		<div id="toc">
-		</div>
+	</div>
+	
+	<div id="toc" data-role="content" data-theme="a">
+		menu goes here!
 	</div>
 </div>
 </body>
