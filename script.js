@@ -17,7 +17,9 @@ $(document).ready(function() {
 				new_page_id = "#page" + new_page_id;
 
 				$(this).hide();
+				$(this).removeClass("active");
 				$(new_page_id).show("slide", { direction: "right", distance: "50px" }, 500);
+				$(new_page_id).addClass("active");
 			}
 		}
 
@@ -34,7 +36,9 @@ $(document).ready(function() {
 				new_page_id = "#page" + new_page_id;
 
 				$(this).hide();
+				$(this).removeClass("active");
 				$(new_page_id).show("slide", { direction: "left", distance: "50px" }, 500);
+				$(new_page_id).addClass("active");
 			}
 		}
 
@@ -47,7 +51,9 @@ $(document).ready(function() {
 	$(".bookmark").live("tap", function(event) {
 		// find current page
 		var page_num = parseInt($(".active").attr("id").replace("page",""));
+		console.log("page: " + page_num);
 		// add bookmark to current page's bookmark div
 		$("#bookmark" + page_num).toggleClass("dogeared");
+		console.log("dogeared id: " + $(".dogeared").attr("id"));
 	});
 });

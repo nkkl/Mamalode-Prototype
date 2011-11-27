@@ -27,7 +27,6 @@ body {
 /** PAGES **/
 .page {
 	margin: 0;
-/*	padding: 50px;*/
 	font-size: 11pt;
 	overflow: hidden;
 	background: white;
@@ -67,7 +66,7 @@ body {
 }
 
 .bookmark {
-	z-index: 1000;
+	z-index: 900;
 	height: 60px;
 	width: 60px;
 	position: absolute;
@@ -76,10 +75,10 @@ body {
 }
 
 .dogeared {
+	z-index: 1000;
 	position: absolute;
 	top: 0px;
 	right: 0px;
-	z-index: 1000;
 	border-color: white white rgb(200,200,200) rgb(200,200,200);
 	border-style: solid;
 	border-width: 30px;
