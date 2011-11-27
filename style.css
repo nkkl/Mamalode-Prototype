@@ -92,15 +92,15 @@ body {
 	float: right;
 }
 
-#1 {
+#page_1 {
 	z-index: 80;
 }
 
-#2 {
+#page_2 {
 	z-index: 90;
 }
 
-#3 {
+#page_3 {
 	z-index: 100;
 }
 
