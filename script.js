@@ -10,7 +10,7 @@ $(document).ready(function() {
 			var new_page_id;
 
 			// if we are on the last page, don't turn
-			if ( page_id == 17 ) {
+			if ( page_id == 18 ) {
 				// do nothing
 			} else {
 				new_page_id = page_id + 1;

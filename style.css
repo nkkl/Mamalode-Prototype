@@ -241,30 +241,11 @@ body {
 
 #page18 {
 	z-index: 250;
-	background-image: url("photos/p18.jpeg");
+	background-image: url("photos/rear_cover.png");
 	height: 1020px;
 	width: 764px;
 	background-repeat: no-repeat;
 }
-
-#page19 {
-	z-index: 260;
-	background-image: url("photos/p19.jpeg");
-	height: 1020px;
-	width: 764px;
-	background-repeat: no-repeat;
-}
-
-
-#page20 {
-	z-index: 270;
-	background-image: url("photos/p20.jpeg");
-	height: 1020px;
-	width: 764px;
-	background-repeat: no-repeat;
-}
-
-
 
 /** MENU **/
 #menubar {
