@@ -27,7 +27,7 @@ $(document).ready(function() {
 			var new_page_id;
 
 			// if we are on the first page, don't turn
-			if (page_id == 1 ) {
+			if (page_id == 0 ) {
 				// do nothing
 			} else {
 				new_page_id = page_id - 1;

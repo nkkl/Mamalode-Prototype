@@ -97,17 +97,173 @@ body {
 	float: right;
 }
 
-#page1 {
+#page0 {
+	z-index: 70;
+	background-image: url("photos/cover.png");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#p1 {
 	z-index: 80;
+	background-image: url("photos/p1.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
 }
 
 #page2 {
 	z-index: 90;
+	background-image: url("photos/p2.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
 }
 
 #page3 {
 	z-index: 100;
+	background-image: url("photos/p3.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
 }
+
+#page4 {
+	z-index: 110;
+	background-image: url("photos/p4.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#page5 {
+	z-index: 120;
+	background-image: url("photos/p5.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#page6 {
+	z-index: 130;
+	background-image: url("photos/p6.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#page7 {
+	z-index: 140;
+	background-image: url("photos/p7.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#page8 {
+	z-index: 150;
+	background-image: url("photos/p8.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#page9 {
+	z-index: 160;
+	background-image: url("photos/p9.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#page10 {
+	z-index: 170;
+	background-image: url("photos/p10.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+#page11 {
+	z-index: 180;
+	background-image: url("photos/p11.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#page12 {
+	z-index: 190;
+	background-image: url("photos/p12.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#page13 {
+	z-index: 200;
+	background-image: url("photos/p13.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#page14 {
+	z-index: 210;
+	background-image: url("photos/p14.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#page15 {
+	z-index: 220;
+	background-image: url("photos/p15.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+#page16 {
+	z-index: 230;
+	background-image: url("photos/p16.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#page17 {
+	z-index: 240;
+	background-image: url("photos/p17.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+#page18 {
+	z-index: 250;
+	background-image: url("photos/p18.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+#page19 {
+	z-index: 260;
+	background-image: url("photos/p19.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+
+#page20 {
+	z-index: 270;
+	background-image: url("photos/p20.jpeg");
+	width: 1020px;
+	height: 764px;
+	background-repeat: no-repeat;
+}
+
+
 
 /** MENU **/
 #menubar {
