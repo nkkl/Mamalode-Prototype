@@ -85,7 +85,6 @@ body {
 	width: 200px;
 	overflow: hidden;
 	position: absolute;
-	left: 10px; 
 	background-color: #D3D3D3;
 }
  
@@ -124,18 +123,13 @@ body {
 /** Scroll Menu Wrapper**/
 div.scrollMenuWrapper {
 	position: relative; 	
-	height: 1020px;		/* Conform to the iPad's size */
-	width: 180px;		/* Make bigger than a photo, because we need a place for a scrollbar. */	
-	margin-top: 30px;	
+	height: 500px;		/* Conform to the iPad's size */
+	width: 180px;		/* Make bigger than a photo, because we need a place for a scrollbar. */		
 	left: 200px;		/* To make space for the MenuBar */
 	overflow: auto;
 }
 
 /** Scroll Menu Contents **/
-div.scrollMenuContents {
-
-}
-
 
 .scrollMenuContents img {
   display: block;

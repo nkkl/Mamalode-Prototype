@@ -132,6 +132,9 @@ function makeScrollable(wrapper, scrollable){
 	}
 }
 	
-$(function(){	
-	makeScrollable("div.scrollMenuWrapper", "div.scrollMenuContents");
+// wait until everything is loaded before running any js
+$(document).ready(function() {	
+	$(function(){	
+		makeScrollable("div.scrollMenuWrapper", "div.scrollMenuContents");
+	});
 });
