@@ -15,7 +15,7 @@ body {
 
 #wrapper {
 	margin: 0;
-	padding: 2px;
+	padding: 0;
 	overflow: hidden;
 	position: relative;
 }
