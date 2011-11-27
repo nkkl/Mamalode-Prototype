@@ -11,6 +11,7 @@
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
 
 	<!-- import our css and js -->
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -24,12 +25,15 @@
 		}
 	</script>
 
+	<!-- icons -->
+	<link rel="shortcut icon" href="http://dl.dropbox.com/u/3220609/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="http://dl.dropbox.com/u/3220609/apple-touch-icon.png"/>
 </head>
 <body> <!-- ontouchmove="BlockMove(event);" > -->
 <div id="wrapper">
 	<!-- each div of class "page" represents one page of the magazine -->
 	<!-- pages are "turned" by showing/hiding these divs using js -->
-	<div id="1" class="page active">
+	<div id="page1" class="page active">
 		<div class="columnLeft">
 			<h2>STORY ONE</h2>
 
@@ -68,10 +72,11 @@
 		</div>
 
 		<div class="pageNum">page 1</div>
+		<div id="bookmark1"></div>
 	</div>
 
 	<!-- Page 2 -->
-	<div id="2" class="page">
+	<div id="page2" class="page">
 		<div class="columnLeft">
 			<h2>STORY FIVE</h2>
 
@@ -107,10 +112,11 @@
 		</div>
 
 		<div class="pageNum">page 2</div>
+		<div id="bookmark2"></div>
 	</div>
 	
 	<!-- Page 3 -->
-	<div id="3" class="page">
+	<div id="page3" class="page">
 		<div class="columnLeft">
 			<h2>STORY NINE</h2>
 
@@ -156,6 +162,7 @@
 		</div>
 
 		<div class="pageNum">page 3</div>
+		<div id="bookmark3"></div>
 	</div>
 
 	<!-- this is where bookmarks go -->
@@ -164,9 +171,9 @@
 
 	<!-- this is the top menu bar -->
 	<!-- menu bar is hidden by default, shown on tap via js -->
-	<div id="menubar">
-		This is the menu bar!
-
+	<div id="menubar" data-role="header">
+		<a>Table of Contents</a>
+		<a href="mailto:?subject=Mamalode%20article">Share</a>
 		<!-- this is the table of contents -->
 		<!-- the TOC is a child of "menubar" so that we can use CSS positioning on it -->
 		<div id="toc">
