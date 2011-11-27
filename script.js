@@ -44,7 +44,12 @@ $(document).ready(function() {
 
 		// toggle menu bar on tap
 		if (event.type == "tap") {
-			$("#menubar").toggle();
+			if ( $("#menubar").css("display") == "none" ) {
+				$("#menubar").show();
+			} else {
+				$("#toc").hide();
+				$("#menubar").hide();
+			}
 		}
 	});
 
