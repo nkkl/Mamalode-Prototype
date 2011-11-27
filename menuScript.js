@@ -1,17 +1,4 @@
-/**  javascript file for "jump to" 
- *   makeScrollable - http://valums.com/vertical-scrolling-menu/
- */
-
- 
-
-
-
-
-// wait until everything is loaded before running any js
-$(document).ready(function(){
-	
-	
-	function makeScrollable(wrapper, scrollable){
+function makeScrollable(wrapper, scrollable){
 	// Get jQuery elements
 	var wrapper = $(wrapper), scrollable = $(scrollable);
 	
@@ -145,23 +132,9 @@ $(document).ready(function(){
 	}
 }
 	
-$(function(){	
-	makeScrollable("div.scrollMenuWrapper", "div.scrollMenuContents");
+// wait until everything is loaded before running any js
+$(document).ready(function() {	
+	$(function(){	
+		makeScrollable("div.scrollMenuWrapper", "div.scrollMenuContents");
+	});
 });
-});
-
-/*$(".menubarContents").click(function(event){
-		//prevent the default action for the click event
-		event.preventDefault();
-		
-		var $anchor = $(this);
-                    
-        
-
-		//goto that anchor by setting the body scroll top to anchor top
-		$('html, body').animate({
-			 scrollTop: $($anchor.attr('href')).offset().top
-		});
-		
-	}); */
-
