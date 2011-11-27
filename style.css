@@ -92,20 +92,21 @@ body {
 	float: right;
 }
 
-#page_1 {
+#page1 {
 	z-index: 80;
 }
 
-#page_2 {
+#page2 {
 	z-index: 90;
 }
 
-#page_3 {
+#page3 {
 	z-index: 100;
 }
 
 /** MENU **/
 #menubar {
+	z-index: 1000;
 	height: 44px;
 	background: black;
 	width: 100%;
