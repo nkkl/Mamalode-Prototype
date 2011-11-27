@@ -99,7 +99,7 @@ body {
 /** MAGAZINE PAGES **/
 #page0 {
 	z-index: 70;
-	background-image: url("photos/cover.png");
+	background-image: url("photos/cover.PNG");
 	height: 1020px;
 	width: 764px;
 	background-repeat: no-repeat;
