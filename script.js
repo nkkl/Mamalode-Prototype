@@ -66,7 +66,20 @@ $(document).ready(function() {
 		$("#toc").toggle();
 	});
 
-	$("#toc-items").live("tap", function(event) {
-		// jump to articles
+	$("#toc-items > div > div").live("tap", function(event) {
+		// make sure the article is actually in this edition
+		if ($(this).attr("id")) {
+			// parse out the target page number
+			// create target ID based on page number
+			var target_page = "#page" + parseInt($(this).attr("id").replace("linkto", ""));
+
+			// hide the current page and menu, show target page
+			$(".active").hide();
+			$(".active").removeClass("active");
+			$(target_page).show();
+			$(target_page).addClass("active");
+			$("#toc").hide();
+			$("#menubar").hide();
+		}
 	});
 });
