@@ -11,7 +11,7 @@ body {
 	padding: 0;
 }
 
-#wrapper {
+#body-wrapper {
 	margin: 0;
 	padding: 0;
 	height: 1020px;
@@ -245,24 +245,4 @@ body {
 	height: 1020px;
 	width: 764px;
 	background-repeat: no-repeat;
-}
-
-/** MENU **/
-#menubar {
-	z-index: 1000;
-	height: 44px;
-	width: 100%;
-	color: white;
-	position: absolute;
-	top: 0;
-	display: none;
-}
-
-#toc {
-	z-index: 900;
-	height: 976px;
-	width: 600px;
-	position: absolute;
-	top: 44px;
-	display: none;
 }

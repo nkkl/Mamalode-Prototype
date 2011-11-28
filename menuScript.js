@@ -22,7 +22,7 @@ function makeScrollable(wrapper, scrollable){
 			setTimeout(function(){
 				
 				loading.hide();
-				// Remove scrollbars	
+				// Remove scrollbars
 				wrapper.css({overflow: 'hidden'});						
 				
 				scrollable.slideDown('slow', function(){
