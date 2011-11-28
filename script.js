@@ -65,4 +65,8 @@ $(document).ready(function() {
 	$("#toc-trigger").live("tap", function(event) {
 		$("#toc").toggle();
 	});
+
+	$("#toc-items").live("tap", function(event) {
+		// jump to articles
+	});
 });
