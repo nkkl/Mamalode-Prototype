@@ -47,6 +47,7 @@ $(document).ready(function() {
 			if ( $("#menubar").css("display") == "none" ) {
 				$("#menubar").show();
 			} else {
+				// hide the menu AND the toc
 				$("#toc").hide();
 				$("#menubar").hide();
 			}
@@ -56,10 +57,9 @@ $(document).ready(function() {
 	$(".bookmark").live("tap", function(event) {
 		// find current page
 		var page_num = parseInt($(".active").attr("id").replace("page",""));
-		console.log("page: " + page_num);
+
 		// add bookmark to current page's bookmark div
 		$("#bookmark" + page_num).toggleClass("dogeared");
-		console.log("dogeared id: " + $(".dogeared").attr("id"));
 	});
 
 	$("#toc-trigger").live("tap", function(event) {
