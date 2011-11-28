@@ -30,6 +30,11 @@
 	width: 210px;
 	color: white;
 	text-align: center;
+	
+}
+
+#toc-nav a {
+	text-decoration: none;
 }
 
 /** Scroll Menu Wrapper**/
