@@ -125,7 +125,7 @@ body {
 	position: relative; 
 	overflow: hidden;
 		
-	height: 700px;		/* Conform to the iPad's size */
+	height: 1020px;		/* Conform to the iPad's size */
 	width: 180px;		/* Make bigger than a photo, because we need a place for a scrollbar. */		
 	left: 200px;		/* To make space for the MenuBar */
 	
