@@ -138,8 +138,7 @@ body {
 /** Scroll Menu Wrapper**/
 .vertical {
 	position: relative; 
-	overflow: hidden;
-		
+	overflow: hidden;		
 	height: 1020px;		/* Conform to the iPad's size */
 	width: 180px;		/* Make bigger than a photo, because we need a place for a scrollbar. */		
 	left: 200px;		/* To make space for the MenuBar */
@@ -151,7 +150,7 @@ body {
 	position:absolute;
 	
 	/* this time we have very large space for height */	
-	height:20000em;	
+	height:30000em;	
 	margin: 0px;
 }
 /* Single scrollable items */
