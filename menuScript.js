@@ -135,7 +135,10 @@ function makeScrollable(wrapper, scrollable){
 // wait until everything is loaded before running any js
 $(function() {		
 		
-	// initialize scrollable with mousewheel support
-	$(".scrollable").scrollable({ vertical: true, mousewheel: true });	
+	/*
+	 * Initialize scrollable with mousewheel support, and navigator plugin
+	 * 
+	 */ 
+	$(".scrollable").scrollable({ vertical: true, mousewheel: true }).navigator({navi: "#toc-nav"});
 	
 });

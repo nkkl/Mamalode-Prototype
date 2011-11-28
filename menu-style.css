@@ -6,6 +6,7 @@
 	height: 44px;
 	width: 100%;
 	color: white;
+	font-size: 14px;
 	position: absolute;
 	top: 0;
 	display: none;
@@ -20,12 +21,15 @@
 	display: none;
 	padding: 0;
 	overflow: hidden;
-	text-shadow: none;
+	text-shadow: none;	
 }
 
+
 #toc-nav div {
-	padding: 1px 20px;
+	padding: 1px 18px;
 	width: 210px;
+	color: white;
+	text-align: center;
 }
 
 /** Scroll Menu Wrapper**/
@@ -79,7 +83,7 @@
 }
 
 #because-nav {
-	background: lightBlue;
+	background: blue;
 }
 
 #expressions-nav {
