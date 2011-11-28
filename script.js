@@ -59,13 +59,18 @@ $(document).ready(function() {
 		var page_num = parseInt($(".active").attr("id").replace("page",""));
 
 		if ( $("#bookmark" + page_num).hasClass("dogeared") ) {
-			console.log("remove class");
 			// if the page is already bookmarked, hide dogearing and remove from TOC
 			$("#bookmark" + page_num).toggleClass("dogeared");
 			$("div").remove("#bookmarksID > #linkto" + page_num);
-			return;
+
+			// if there are no bookmarks left, show the bookmarking tutorial
+			if ( $("#bookmarksID").children().size() == 1 ) {
+				$("#bookmark-tutorial").show();
+			}
 		} else {
-			console.log("add class");
+			// hide the bookmarking tutorial
+			$("#bookmark-tutorial").hide();
+
 			// add bookmark to current page's bookmark div
 			$("#bookmark" + page_num).toggleClass("dogeared");
 
