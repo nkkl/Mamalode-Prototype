@@ -69,7 +69,7 @@ $(document).ready(function() {
 			}
 		} else {
 			// hide the bookmarking tutorial
-			$("#bookmark-tutorial").hide();
+			$(".bookmark-tutorial").hide();
 
 			// add bookmark to current page's bookmark div
 			$("#bookmark" + page_num).toggleClass("dogeared");
