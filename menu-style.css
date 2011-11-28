@@ -125,7 +125,7 @@ body {
 	position: relative; 
 	overflow: hidden;
 		
-	height: 1020px;		/* Conform to the iPad's size */
+	height: 700px;		/* Conform to the iPad's size */
 	width: 180px;		/* Make bigger than a photo, because we need a place for a scrollbar. */		
 	left: 200px;		/* To make space for the MenuBar */
 	
@@ -142,11 +142,14 @@ body {
 /* Single scrollable items */
 
 
+.item{
+	height:165px;
+}
 .item img {
-  display: block;
-  border: none;
-  width: 100%;
-  height: 140px;
+	display: block;
+	border: none;
+	width: 100%;
+	height: 140px;
 
   /* When image support is turned off */
   color: #fff;
