@@ -58,8 +58,17 @@ $(document).ready(function() {
 		// find current page
 		var page_num = parseInt($(".active").attr("id").replace("page",""));
 
-		// add bookmark to current page's bookmark div
-		$("#bookmark" + page_num).toggleClass("dogeared");
+		if ( $("#bookmark" + page_num).hasClass("dogeared") ) {
+			// if the page is already bookmarked, hide dogearing and remove from TOC
+			$("#bookmark" + page_num).toggleClass("dogeared");
+			$("#linkto" + page_num).remove();
+		} else {
+			// add bookmark to current page's bookmark div
+			$("#bookmark" + page_num).toggleClass("dogeared");
+
+			var content = '<div class="item" id="linkto' + page_num + '"><img src="img/bookmark.png"/><div class="toc-bookmark">' + 'page ' + page_num + '</div></div>';
+			$("#bookmarksID").append(content);
+		}
 	});
 
 	$("#toc-trigger").live("tap", function(event) {
