@@ -133,8 +133,9 @@ function makeScrollable(wrapper, scrollable){
 }
 	
 // wait until everything is loaded before running any js
-$(document).ready(function() {	
-	$(function(){	
-		makeScrollable("div.scrollMenuWrapper", "div.scrollMenuContents");
-	});
+$(function() {		
+		
+	// initialize scrollable with mousewheel support
+	$(".scrollable").scrollable({ vertical: true, mousewheel: true });	
+	
 });
