@@ -59,10 +59,13 @@ $(document).ready(function() {
 		var page_num = parseInt($(".active").attr("id").replace("page",""));
 
 		if ( $("#bookmark" + page_num).hasClass("dogeared") ) {
+			console.log("remove class");
 			// if the page is already bookmarked, hide dogearing and remove from TOC
 			$("#bookmark" + page_num).toggleClass("dogeared");
-			$("#linkto" + page_num).remove();
+			$("div").remove("#bookmarksID > #linkto" + page_num);
+			return;
 		} else {
+			console.log("add class");
 			// add bookmark to current page's bookmark div
 			$("#bookmark" + page_num).toggleClass("dogeared");
 
