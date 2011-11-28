@@ -1,7 +1,5 @@
-function makeScrollable(wrapper, scrollable){
-	// Get jQuery elements
-	var wrapper = $(wrapper), scrollable = $(scrollable);
 	
+<<<<<<< HEAD
 	// Hide images until they are not loaded
 	scrollable.hide();
 	var loading = $('<div class="loading">Loading...</div>').appendTo(wrapper);
@@ -29,113 +27,76 @@ function makeScrollable(wrapper, scrollable){
 					enable();	
 				});					
 			}, 1000);	
-		}
-	}, 100);
-	
-	function enable(){
-		// height of area at the top at bottom, that don't respond to mousemove
-		var inactiveMargin = 99;					
-		// Cache for performance
-		var wrapperWidth = wrapper.width();
-		var wrapperHeight = wrapper.height();
-		// Using outer height to include padding too
-		var scrollableHeight = scrollable.outerHeight() + 2*inactiveMargin;
-		// Do not cache wrapperOffset, because it can change when user resizes window
-		// We could use onresize event, but it's just not worth doing that 
-		// var wrapperOffset = wrapper.offset();
-		
-		// Create a invisible tooltip
-		var tooltip = $('<div class="sc_menu_tooltip"></div>')
-			.css('opacity', 0)
-			.appendTo(wrapper);
-	
-		// Save menu titles
-		scrollable.find('a').each(function(){				
-			$(this).data('tooltipText', this.title);				
-		});
-		
-		// Remove default tooltip
-		scrollable.find('a').removeAttr('title');		
-		// Remove default tooltip in IE
-		scrollable.find('img').removeAttr('alt');	
-		
-		var lastTarget;
-		//When user move mouse over menu			
-		wrapper.mousemove(function(e){
-			// Save target
-			lastTarget = e.target;
-
-			var wrapperOffset = wrapper.offset();
-		
-			var tooltipLeft = e.pageX - wrapperOffset.left;
-			// Do not let tooltip to move out of menu.
-			// Because overflow is set to hidden, we will not be able too see it 
-			tooltipLeft = Math.min(tooltipLeft, wrapperWidth - 75); //tooltip.outerWidth());
-			
-			var tooltipTop = e.pageY - wrapperOffset.top + wrapper.scrollTop() - 40;
-			// Move tooltip under the mouse when we are in the higher part of the menu
-			if (e.pageY - wrapperOffset.top < wrapperHeight/2){
-				tooltipTop += 80;
-			}				
-			tooltip.css({top: tooltipTop, left: tooltipLeft});				
-			
-			// Scroll menu
-			var top = (e.pageY -  wrapperOffset.top) * (scrollableHeight - wrapperHeight) / wrapperHeight - inactiveMargin;
-			if (top < 0){
-				top = 0;
-			}			
-			wrapper.scrollTop(top);
-		});
-		
-		// Setting interval helps solving perfomance problems in IE
-		var interval = setInterval(function(){
-			if (!lastTarget) return;	
-										
-			var currentText = tooltip.text();
-			
-			if (lastTarget.nodeName == 'IMG'){					
-				// We've attached data to a link, not image
-				var newText = $(lastTarget).parent().data('tooltipText');
-
-				// Show tooltip with the new text
-				if (currentText != newText) {
-					tooltip
-						.stop(true)
-						.css('opacity', 0)	
-						.text(newText)
-						.animate({opacity: 1}, 1000);
-				}					
-			}
-		}, 200);
-		
-		// Hide tooltip when leaving menu
-		wrapper.mouseleave(function(){
-			lastTarget = false;
-			tooltip.stop(true).css('opacity', 0).text('');
-		});			
-		
-		/*
-		//Usage of hover event resulted in performance problems
-		scrollable.find('a').hover(function(){
-			tooltip
-				.stop()
-				.css('opacity', 0)
-				.text($(this).data('tooltipText'))
-				.animate({opacity: 1}, 1000);
-	
-		}, function(){
-			tooltip
-				.stop()
-				.animate({opacity: 0}, 300);
-		});
-		*/			
-	}
-}
-	
+=======
 // wait until everything is loaded before running any js
 $(function() {		
+	// catch swipes and "turn" the pages
+	$(".page").live("swipeleft swiperight tap", function(event) {
+		// catch right-to-left swipes
+		if (event.type == "swipeleft") {
+			var page_id = parseInt($(this).attr("id").replace("page",""));
+			var new_page_id;
+
+			// if we are on the last page, don't turn
+			if ( page_id == 18 ) {
+				// do nothing
+			} else {
+				new_page_id = page_id + 1;
+				new_page_id = "#page" + new_page_id;
+
+				$(this).hide();
+				$(this).removeClass("active");
+				$(new_page_id).show("slide", { direction: "right", distance: "50px" }, 500);
+				$(new_page_id).addClass("active");
+			}
+>>>>>>> cb8f5d04be477c0717db1bab94676026545ffd29
+		}
+
+		// catch left-to-right swipes
+		if (event.type == "swiperight") {
+			var page_id = parseInt($(this).attr("id").replace("page",""));
+			var new_page_id;
+
+			// if we are on the first page, don't turn
+			if (page_id == 0 ) {
+				// do nothing
+			} else {
+				new_page_id = page_id - 1;
+				new_page_id = "#page" + new_page_id;
+
+				$(this).hide();
+				$(this).removeClass("active");
+				$(new_page_id).show("slide", { direction: "left", distance: "50px" }, 500);
+				$(new_page_id).addClass("active");
+			}
+		}
 		
+	 
+		// toggle menu bar on side
+		if (event.type == "tap") {
+			
+			if ( $("#menubarID").css("display") == "none" ) {
+				$("#menubarID").show();
+				$("#scrollableID").show();
+			} else {
+				// hide the menu AND the toc
+				$("#scrollableID").hide();
+				$("#menubarID").hide();
+			}
+		}
+		
+	});
+	
+	
 	// initialize scrollable with mousewheel support
 	$(".scrollable").scrollable({ vertical: true, mousewheel: true });	
+	
+	$(".bookmark").live("tap", function(event) {
+		// find current page
+		var page_num = parseInt($(".active").attr("id").replace("page",""));
+
+		// add bookmark to current page's bookmark div
+		$("#bookmark" + page_num).toggleClass("dogeared");
+	});
 	
 });
