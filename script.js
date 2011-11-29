@@ -65,7 +65,7 @@ $(document).ready(function() {
 
 			// if there are no bookmarks left, show the bookmarking tutorial
 			if ( $("#bookmarksID").children().size() == 1 ) {
-				$("#bookmark-tutorial").show();
+				$(".bookmark-tutorial").show();
 			}
 		} else {
 			// hide the bookmarking tutorial
