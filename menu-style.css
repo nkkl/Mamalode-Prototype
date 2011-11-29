@@ -37,6 +37,8 @@
 	text-decoration: none;
 }
 
+
+
 /** Scroll Menu Wrapper**/
 .vertical {
 	position: absolute;
@@ -83,12 +85,14 @@
 	background-color: rgb(100,100,100);
 }
 
+
 #mamasays-nav {
-	background: #FFD700;
+	background: #FFD700;	
 }
 
+
 #because-nav {
-	background: blue;
+	background: #ADD8E6;
 }
 
 #expressions-nav {
