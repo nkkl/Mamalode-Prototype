@@ -8,7 +8,7 @@ $(function() {
 	$(".scrollable").scrollable({ vertical: true, mousewheel: true }).navigator({navi: "#toc-nav"});
 
 	$('.nav').click(function() {
-		
+		/*
 		var tab = $(this);
     	
     	tab.parent().find('.nav').css('background-color','#40E0D0');
@@ -22,7 +22,7 @@ $(function() {
     	$(this).parent.find($("#bookmarks-nav").css('background', rgb(100,100,100)); 
     	
     	tab.css('background',"#D87093");
-    	
+    	*/
 	});
 
 });
