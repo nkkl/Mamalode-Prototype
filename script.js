@@ -91,12 +91,11 @@ $(document).ready(function() {
 			var target_page = "#page" + parseInt($(this).attr("id").replace("linkto", ""));
 
 			// hide the current page and menu, show target page
-			$(".active").hide();
 			$(".active").removeClass("active");
 			$(target_page).show();
 			$(target_page).addClass("active");
-			$("#toc").hide();
-			$("#menubar").hide();
+			$("#toc").toggle();
+			$("#menubar").toggle();
 		}
 	});
 });
