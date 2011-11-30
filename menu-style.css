@@ -149,16 +149,22 @@
 	height: 20px;
 }
 
-.item.pageLength {
+.pageLength {
 	height: 40px;
 	width: 50%;
 	text-align: left;
+	float: left;
 }
 
-.item.index {
+.index {
 	margin-left: 90px;
 	width: 50%;
 	text-align: right;
+	float: right;
+}
+
+.clear {
+	clear: both;
 }
 /*
 .item p {
