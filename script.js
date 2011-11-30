@@ -100,7 +100,7 @@ $(document).ready(function() {
 			$(target_page).show();
 			$(target_page).addClass("activeclass");
 			$("#toc").toggle();
-			$("#menubar").toggle();
+			//$("#menubar").toggle();
 		}
 	});
 });
