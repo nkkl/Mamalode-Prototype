@@ -12,7 +12,7 @@ $(function() {
 		
 		var tab = $(this);
 		
-		
+		/*
 		$("#mamasays-nav").css('background-color', "#FFD700");
 	    $("#because-nav").css('background-color', "#ADD8E6"); 	
 	    $("#expressions-nav").css('background-color', "#DC143C");     	
@@ -23,7 +23,7 @@ $(function() {
 	    	
 	    // Sets the selected tab's background colour to black.
 	    tab.css('background-color','black');
-	    /*
+	    */
 	    $("#mamasays-nav").css('border', 'none');
 	    $("#because-nav").css('border', 'none'); 	
 	    $("#expressions-nav").css('border', 'none');     	
@@ -36,7 +36,7 @@ $(function() {
 	    tab.css('border-width', '1px');
 	    tab.css('border-color', 'white'); 
 
-		*/    
+		   
     	
     });
     

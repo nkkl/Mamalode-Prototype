@@ -107,7 +107,7 @@ body {
 
 #page1 {
 	z-index: 80;
-	background-image: url("photos/p1.jpeg");
+	background-image: url("photos/instructions.png");
 	height: 1020px;
 	width: 764px;
 	background-repeat: no-repeat;
@@ -115,7 +115,7 @@ body {
 
 #page2 {
 	z-index: 90;
-	background-image: url("photos/p2.jpeg");
+	background-image: url("photos/p1.jpeg");
 	height: 1020px;
 	width: 764px;
 	background-repeat: no-repeat;
@@ -123,7 +123,7 @@ body {
 
 #page3 {
 	z-index: 100;
-	background-image: url("photos/p3.jpeg");
+	background-image: url("photos/p2.jpeg");
 	height: 1020px;
 	width: 764px;
 	background-repeat: no-repeat;
@@ -131,7 +131,7 @@ body {
 
 #page4 {
 	z-index: 110;
-	background-image: url("photos/p4.jpeg");
+	background-image: url("photos/p3.jpeg");
 	height: 1020px;
 	width: 764px;
 	background-repeat: no-repeat;
@@ -139,7 +139,7 @@ body {
 
 #page5 {
 	z-index: 120;
-	background-image: url("photos/p5.jpeg");
+	background-image: url("photos/p4.jpeg");
 	height: 1020px;
 	width: 764px;
 	background-repeat: no-repeat;
@@ -147,7 +147,7 @@ body {
 
 #page6 {
 	z-index: 130;
-	background-image: url("photos/p6.jpeg");
+	background-image: url("photos/p5.jpeg");
 	height: 1020px;
 	width: 764px;
 	background-repeat: no-repeat;
@@ -155,7 +155,7 @@ body {
 
 #page7 {
 	z-index: 140;
-	background-image: url("photos/p7.jpeg");
+	background-image: url("photos/p6.jpeg");
 	height: 1020px;
 	width: 764px;
 	background-repeat: no-repeat;
@@ -163,7 +163,7 @@ body {
 
 #page8 {
 	z-index: 150;
-	background-image: url("photos/p8.jpeg");
+	background-image: url("photos/p7.jpeg");
 	height: 1020px;
 	width: 764px;
 	background-repeat: no-repeat;
@@ -171,7 +171,7 @@ body {
 
 #page9 {
 	z-index: 160;
-	background-image: url("photos/p9.jpeg");
+	background-image: url("photos/p8.jpeg");
 	height: 1020px;
 	width: 764px;
 	background-repeat: no-repeat;
@@ -179,14 +179,14 @@ body {
 
 #page10 {
 	z-index: 170;
-	background-image: url("photos/p10.jpeg");
+	background-image: url("photos/p9.jpeg");
 	height: 1020px;
 	width: 764px;
 	background-repeat: no-repeat;
 }
 #page11 {
 	z-index: 180;
-	background-image: url("photos/p11.jpeg");
+	background-image: url("photos/p10.jpeg");
 	height: 1020px;
 	width: 764px;
 	background-repeat: no-repeat;
@@ -194,7 +194,7 @@ body {
 
 #page12 {
 	z-index: 190;
-	background-image: url("photos/p12.jpeg");
+	background-image: url("photos/p11.jpeg");
 	height: 1020px;
 	width: 764px;
 	background-repeat: no-repeat;
@@ -202,7 +202,7 @@ body {
 
 #page13 {
 	z-index: 200;
-	background-image: url("photos/p13.jpeg");
+	background-image: url("photos/p12.jpeg");
 	height: 1020px;
 	width: 764px;
 	background-repeat: no-repeat;
@@ -210,7 +210,7 @@ body {
 
 #page14 {
 	z-index: 210;
-	background-image: url("photos/p14.jpeg");
+	background-image: url("photos/p13.jpeg");
 	height: 1020px;
 	width: 764px;
 	background-repeat: no-repeat;
@@ -218,14 +218,14 @@ body {
 
 #page15 {
 	z-index: 220;
-	background-image: url("photos/p15.jpeg");
+	background-image: url("photos/p14.jpeg");
 	height: 1020px;
 	width: 764px;
 	background-repeat: no-repeat;
 }
 #page16 {
 	z-index: 230;
-	background-image: url("photos/p16.jpeg");
+	background-image: url("photos/p15.jpeg");
 	height: 1020px;
 	width: 764px;
 	background-repeat: no-repeat;
@@ -233,7 +233,7 @@ body {
 
 #page17 {
 	z-index: 240;
-	background-image: url("photos/p17.jpeg");
+	background-image: url("photos/p16.jpeg");
 	height: 1020px;
 	width: 764px;
 	background-repeat: no-repeat;
@@ -241,8 +241,17 @@ body {
 
 #page18 {
 	z-index: 250;
+	background-image: url("photos/p17");
+	height: 1020px;
+	width: 764px;
+	background-repeat: no-repeat;
+}
+
+#page19 {
+	z-index: 250;
 	background-image: url("photos/rear_cover.png");
 	height: 1020px;
 	width: 764px;
 	background-repeat: no-repeat;
 }
+
