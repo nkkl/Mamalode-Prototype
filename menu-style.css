@@ -142,7 +142,7 @@
 
 .item div {
  	font-weight: bold;
- 	font-size: 10px;
+ 	font-size: 15px;
  	padding: 5px 0;
  	text-align: center;	
 	height: 20px;
@@ -160,7 +160,6 @@
 	height: 40px;
 	width: 50%;
 	text-align: right;
-	font-size: 20px;
 	float: left;
 	padding: 0px;
 }
