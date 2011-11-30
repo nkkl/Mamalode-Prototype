@@ -159,8 +159,8 @@
 .index {	
 	height: 40px;
 	width: 50%;
-	text-align: right;
-	font-size: 1.5em;
+	font-size: 20px;
+	text-align: left;
 	float: right;
 	padding: 0px;
 }
