@@ -33,7 +33,7 @@ $(function() {
 	    $("#bookmarks-nav").css('border', 'none');
 	    
 	    tab.css('border-style', 'solid' );
-	    tab.css('border-width', '1px');
+	    tab.css('border-width', '2px');
 	    tab.css('border-color', 'white'); 
 
 		   
