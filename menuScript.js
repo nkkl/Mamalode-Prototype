@@ -12,6 +12,7 @@ $(function() {
 		
 		var tab = $(this);
 		
+		
 		$("#mamasays-nav").css('background-color', "#FFD700");
 	    $("#because-nav").css('background-color', "#ADD8E6"); 	
 	    $("#expressions-nav").css('background-color', "#DC143C");     	
@@ -21,10 +22,26 @@ $(function() {
 	    $("#bookmarks-nav").css('background-color', "rgb(100,100,100)"); 
 	    	
 	    // Sets the selected tab's background colour to black.
-	    tab.css('background-color','black'); 
+	    tab.css('background-color','black');
+	    /*
+	    $("#mamasays-nav").css('border', 'none');
+	    $("#because-nav").css('border', 'none'); 	
+	    $("#expressions-nav").css('border', 'none');     	
+	    $("#bits-nav").css('border', 'none'); 
+	    $("#fashion-nav").css('border', 'none'); 
+	    $("#perspective-nav").css('border', 'none');
+	    $("#bookmarks-nav").css('border', 'none');
+	    
+	    tab.css('border-style', 'solid' );
+	    tab.css('border-width', '1px');
+	    tab.css('border-color', 'white'); 
 
+		*/    
     	
     });
+    
+    
+    
     	 
     	
 	
