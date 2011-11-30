@@ -29,9 +29,7 @@
 	padding: 1px 18px;
 	width: 210px;
 	color: white;
-	text-align: center;
-	
-	
+	text-align: center;	
 }
 
 #toc-nav a {
@@ -127,7 +125,7 @@
 
 /* Single scrollable items */
 .item {
-	height: 230px;
+	height: 200px;
 }
 
 .item img {
@@ -141,12 +139,10 @@
 }
 
 .item div {
-	color: #FFFFFF;
  	font-weight: bold;
  	font-size: 15px;
  	padding: 5px 0;
- 	text-align: center;
-	width: 100%;
+ 	text-align: center;	
 	height: 20px;
 }
 
@@ -155,18 +151,22 @@
 	width: 50%;
 	text-align: left;
 	float: left;
+	padding: 0px;
 }
 
-.index {
-	margin-left: 90px;
+.index {	
+	height: 40px;
 	width: 50%;
+	
 	text-align: right;
-	float: right;
+	
+	float: left;
+	padding: 0px;
 }
 
-.clear {
-	clear: both;
-}
+
+
+
 /*
 .item p {
 	font-weight: bold;

@@ -50,9 +50,11 @@ $(document).ready(function() {
 			*/
 			if ($("#toc").css("display") == "none"){
 				$("#toc").show();
+				$("#share").show();
 			} else {
 				// hide the menu AND the toc
 				$("#toc").hide();
+				$("#share").hide();
 				//$("#menubar").hide();
 			}
 		}
