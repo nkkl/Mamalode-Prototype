@@ -34,7 +34,7 @@ body {
 	position: relative;
 }
 
-.active {
+.activeclass {
 	display: block;
 }
 

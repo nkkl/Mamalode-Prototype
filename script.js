@@ -17,9 +17,9 @@ $(document).ready(function() {
 				new_page_id = "#page" + new_page_id;
 
 				$(this).hide();
-				$(this).removeClass("active");
+				$(this).removeClass("activeclass");
 				$(new_page_id).show("slide", { direction: "right", distance: "50px" }, 500);
-				$(new_page_id).addClass("active");
+				$(new_page_id).addClass("activeclass");
 			}
 		}
 
@@ -36,9 +36,9 @@ $(document).ready(function() {
 				new_page_id = "#page" + new_page_id;
 
 				$(this).hide();
-				$(this).removeClass("active");
+				$(this).removeClass("activeclass");
 				$(new_page_id).show("slide", { direction: "left", distance: "50px" }, 500);
-				$(new_page_id).addClass("active");
+				$(new_page_id).addClass("activeclass");
 			}
 		}
 
@@ -56,7 +56,7 @@ $(document).ready(function() {
 
 	$(".bookmark").live("tap", function(event) {
 		// find current page
-		var page_num = parseInt($(".active").attr("id").replace("page",""));
+		var page_num = parseInt($(".activeclass").attr("id").replace("page",""));
 
 		if ( $("#bookmark" + page_num).hasClass("dogeared") ) {
 			// if the page is already bookmarked, hide dogearing and remove from TOC
@@ -65,7 +65,7 @@ $(document).ready(function() {
 
 			// if there are no bookmarks left, show the bookmarking tutorial
 			if ( $("#bookmarksID").children().size() == 1 ) {
-				$("#bookmark-tutorial").show();
+				$(".bookmark-tutorial").show();
 			}
 		} else {
 			// hide the bookmarking tutorial
@@ -91,12 +91,12 @@ $(document).ready(function() {
 			var target_page = "#page" + parseInt($(this).attr("id").replace("linkto", ""));
 
 			// hide the current page and menu, show target page
-			$(".active").hide();
-			$(".active").removeClass("active");
+			$(".activeclass").hide();
+			$(".activeclass").removeClass("activeclass");
 			$(target_page).show();
-			$(target_page).addClass("active");
-			$("#toc").hide();
-			$("#menubar").hide();
+			$(target_page).addClass("activeclass");
+			$("#toc").toggle();
+			$("#menubar").toggle();
 		}
 	});
 });
