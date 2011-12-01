@@ -113,9 +113,21 @@
 	background: rgb(100,100,100);
 }
 
-#share-nav {
+#shareID {
+	z-index: 1000;
 	background: #AAAAAA;
+	position: fixed;
+	top: 469px;
+	padding: 2px;
+	width: 242px;
+	color: white;
+	display: none;
+	text-decoration: none;
+	text-align: center;
 }
+
+
+
 /* root element for scrollable items */
 .items {	
 	position:absolute;
